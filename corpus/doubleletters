@@ -1,0 +1,21 @@
+#!/home/martink/bin/perl
+
+
+use strict;
+
+my $count;
+my $total_length;
+while(<>) {
+    chomp;
+    my $line = lc $_;
+    $total_length += length($line);
+    while($line =~ /(.)\1/g) {
+	pos($line) --;
+	my $key = $1;
+	next unless $key =~ /[a-z]/;
+	$count++;
+	#print "$key\n";
+    }
+}
+
+print $count," ",$total_length," ",$count/$total_length,"\n";

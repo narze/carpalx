@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat books/*txt | sed s/[\`]/\"/g | tr -s " " | sed 's/--/-/g' | sed 's/^[- 	]*//' | egrep -v ^$ | grep -v "^\.\. " | grep [a-zA-Z]
+
+
+
