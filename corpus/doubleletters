@@ -1,4 +1,4 @@
-#!/home/martink/bin/perl
+#!/usr/local/bin/perl
 
 
 use strict;

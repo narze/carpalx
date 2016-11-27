@@ -46,7 +46,7 @@ Binaries are in bin/ and the first line of each script should be
 adjusted to reflect the location of your perl binary. For example, if
 you are using /usr/bin/perl, then change
 
-  #!/home/martink/bin/perl
+  #!/usr/local/bin/perl
 
 to
 
